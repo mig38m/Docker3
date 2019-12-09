@@ -33,5 +33,6 @@ services:
         ports:
             - 27017:27017
         command: mongod --noauth --smallfiles
-        networks:
-            - webappnetwork
+    networks:
+    webappnetwork:
+        driver: bridge
